@@ -4,48 +4,71 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects – xPhoenix</title>
-  <link rel="icon" type="image/png" href="favicon.png?v=2" />
+  <link rel="icon" type="image/png" href="favicon.png" />
   <style>
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to right, #1f1c2c, #928dab);
       color: white;
       text-align: center;
-      padding-top: 5rem;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #1f1c2c;
+      padding: 1rem 0;
+      z-index: 1000;
     }
-    .projects-container {
+    nav div {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
       gap: 2rem;
+      font-size: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 3em;
+      margin-top: 5rem;
+      margin-bottom: 1rem;
+    }
+    section {
       padding: 2rem;
+    }
+    .project-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
     }
     .project-card {
       background: white;
-      color: #222;
       border-radius: 10px;
-      padding: 1.5rem;
+      padding: 1rem;
       width: 300px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      color: #222;
     }
     .project-card h3 {
-      font-size: 1.3rem;
-      margin-bottom: 0.5rem;
+      margin-top: 0;
+      font-size: 1.2rem;
     }
     .project-card p {
       font-size: 0.95rem;
+      margin: 0.5rem 0;
     }
     .project-card a {
-      display: inline-block;
-      margin-top: 0.5rem;
       color: #0077cc;
       text-decoration: none;
+      font-weight: bold;
     }
     footer {
       padding: 2rem;
@@ -56,40 +79,43 @@
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <nav style="position: fixed; top: 0; width: 100%; background-color: #1f1c2c; padding: 1rem 0; z-index: 1000;">
-    <div style="display: flex; justify-content: center; gap: 2rem; font-size: 1rem;">
-      <a href="index.html" style="color: white; text-decoration: none;">Home</a>
-      <a href="about.html" style="color: white; text-decoration: none;">About</a>
-      <a href="projects.html" style="color: white; text-decoration: none;">Projects</a>
-      <a href="certifications.html" style="color: white; text-decoration: none;">Certifications</a>
-      <a href="blog.html" style="color: white; text-decoration: none;">Blog</a>
-      <a href="contact.html" style="color: white; text-decoration: none;">Contact</a>
+  <nav>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
     </div>
   </nav>
 
-  <h1>Projects</h1>
+  <h1>My Projects</h1>
 
-  <div class="projects-container">
+  <section>
+    <div class="project-wrapper">
 
-    <!-- Project 1 -->
-    <div class="project-card">
-      <h3>Portfolio Website CI/CD</h3>
-      <p>
-        A fully automated static website hosted on S3, secured with CloudFront, deployed via GitHub Actions, and managed with Route 53. Built to showcase my journey and scale with future projects.
-      </p>
-      <a href="https://github.com/Irimeken/xphoenix-portfolio" target="_blank">View on GitHub</a>
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>AWS Static Website Hosting</h3>
+        <p>Deployed a secure personal portfolio using Amazon S3, Route 53, CloudFront, and GitHub Actions (CI/CD).</p>
+        <a href="https://github.com/Irimeken/xphoenix-portfolio" target="_blank">View on GitHub</a>
+      </div>
+
+      <!-- Placeholder 1 -->
+      <div class="project-card" style="opacity: 0.6;">
+        <h3>Serverless Contact Form API</h3>
+        <p>Coming soon: API Gateway + Lambda + SES project for secure, backendless form submission.</p>
+      </div>
+
+      <!-- Placeholder 2 -->
+      <div class="project-card" style="opacity: 0.4;">
+        <h3>More Projects</h3>
+        <p>New projects in cloud architecture and security will appear here as they’re completed.</p>
+      </div>
+
     </div>
-
-    <!-- Placeholder Project -->
-    <div class="project-card" style="opacity: 0.4;">
-      <h3>Coming Soon</h3>
-      <p>
-        More AWS, security, and serverless projects coming soon. Stay tuned!
-      </p>
-    </div>
-
-  </div>
+  </section>
 
   <footer>
     &copy; 2025 Irimekyen Salome Samuel · xphoenix.dev
