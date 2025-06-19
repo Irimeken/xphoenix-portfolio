@@ -4,24 +4,51 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About – xPhoenix</title>
-  <link rel="icon" type="image/png" href="favicon.png?v=2" />
+  <link rel="icon" type="image/png" href="favicon.png" />
   <style>
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to right, #1f1c2c, #928dab);
       color: white;
       text-align: center;
-      padding-top: 5rem;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #1f1c2c;
+      padding: 1rem 0;
+      z-index: 1000;
+    }
+    nav div {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-size: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 3em;
+      margin-top: 5rem;
+      margin-bottom: 0.5em;
     }
     section {
       padding: 2rem;
       max-width: 800px;
       margin: auto;
     }
-    h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-    p { font-size: 1.1rem; line-height: 1.6; }
+    p {
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
     footer {
       padding: 2rem;
       font-size: 0.9em;
@@ -31,28 +58,37 @@
 </head>
 <body>
 
-  <!-- Nav -->
-  <nav style="position: fixed; top: 0; width: 100%; background-color: #1f1c2c; padding: 1rem 0; z-index: 1000;">
-    <div style="display: flex; justify-content: center; gap: 2rem; font-size: 1rem;">
-      <a href="index.html" style="color: white; text-decoration: none;">Home</a>
-      <a href="about.html" style="color: white; text-decoration: none;">About</a>
-      <a href="projects.html" style="color: white; text-decoration: none;">Projects</a>
-      <a href="certifications.html" style="color: white; text-decoration: none;">Certifications</a>
-      <a href="blog.html" style="color: white; text-decoration: none;">Blog</a>
-      <a href="contact.html" style="color: white; text-decoration: none;">Contact</a>
+  <nav>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
     </div>
   </nav>
 
+  <h1>About Me</h1>
+
   <section>
-    <h1>About Me</h1>
     <p>
-      I'm Irimekyen Salome Samuel – an AWS Certified Cloud Solutions Architect Associate, a community leader, and a rising voice in the intersection of cloud security and human rights.
-      <br /><br />
-      My professional transition into tech is fueled by a love for solving complex problems using scalable cloud architectures while advocating for privacy, safety, and inclusion online.
-      <br /><br />
-      As the founder of <strong>Pride of Sheba</strong>, my work supporting sexual and gender minorities in Nigeria has given me a unique lens on identity, resilience, and digital safety, values I now bring into cloud security and innovation.
-      <br /><br />
-      My vision is to design systems that are not only technically sound but socially conscious, blending AI, cloud, and cybersecurity to protect both data and people.
+      I’m Irimekyen Salome Samuel — a certified AWS Cloud Solutions Architect Associate and an emerging cloud security consultant.
+      My journey into tech was born from a deep passion for building secure, scalable, and resilient cloud environments that empower businesses and protect data.
+    </p>
+
+    <p>
+      Before transitioning to tech, I led transformative work as a community advocate and the founder of <strong>Pride of Sheba</strong>, 
+      a nonprofit advancing the rights of sexual and gender minorities in Nigeria. That work fueled my commitment to security — especially where people, identity, and privacy intersect.
+    </p>
+
+    <p>
+      Now, I channel that fire into architecting solutions that not only solve complex problems but also protect people. 
+      I’m passionate about the intersection of cloud computing, cybersecurity, and the future of AI in threat detection and resilience.
+    </p>
+
+    <p>
+      Whether I’m designing cloud infrastructures or pushing for digital equity, I bring intentionality, purpose, and creativity into everything I build.
     </p>
   </section>
 
