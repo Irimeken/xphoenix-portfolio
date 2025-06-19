@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects – xPhoenix</title>
+  <link rel="icon" type="image/png" href="favicon.png?v=2" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1f1c2c, #928dab);
+      color: white;
+      text-align: center;
+      padding-top: 5rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .project-card {
+      background: white;
+      color: #222;
+      border-radius: 10px;
+      padding: 1.5rem;
+      width: 300px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .project-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    .project-card p {
+      font-size: 0.95rem;
+    }
+    .project-card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #0077cc;
+      text-decoration: none;
+    }
+    footer {
+      padding: 2rem;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav style="position: fixed; top: 0; width: 100%; background-color: #1f1c2c; padding: 1rem 0; z-index: 1000;">
+    <div style="display: flex; justify-content: center; gap: 2rem; font-size: 1rem;">
+      <a href="index.html" style="color: white; text-decoration: none;">Home</a>
+      <a href="about.html" style="color: white; text-decoration: none;">About</a>
+      <a href="projects.html" style="color: white; text-decoration: none;">Projects</a>
+      <a href="certifications.html" style="color: white; text-decoration: none;">Certifications</a>
+      <a href="blog.html" style="color: white; text-decoration: none;">Blog</a>
+      <a href="contact.html" style="color: white; text-decoration: none;">Contact</a>
+    </div>
+  </nav>
+
+  <h1>Projects</h1>
+
+  <div class="projects-container">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <h3>Portfolio Website CI/CD</h3>
+      <p>
+        A fully automated static website hosted on S3, secured with CloudFront, deployed via GitHub Actions, and managed with Route 53. Built to showcase my journey and scale with future projects.
+      </p>
+      <a href="https://github.com/Irimeken/xphoenix-portfolio" target="_blank">View on GitHub</a>
+    </div>
+
+    <!-- Placeholder Project -->
+    <div class="project-card" style="opacity: 0.4;">
+      <h3>Coming Soon</h3>
+      <p>
+        More AWS, security, and serverless projects coming soon. Stay tuned!
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Irimekyen Salome Samuel · xphoenix.dev
+  </footer>
+
+</body>
+</html>
