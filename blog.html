@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>xPhoenix – Blog</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1f1c2c, #928dab);
+      color: white;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #1f1c2c;
+      padding: 1rem 0;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1.5rem;
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 5rem;
+      font-size: 2.5rem;
+    }
+
+    .blog-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .blog-card {
+      background-color: white;
+      color: #333;
+      border-radius: 10px;
+      padding: 1.5rem;
+      width: 300px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .blog-card h3 {
+      margin-top: 0;
+    }
+
+    .blog-card p {
+      font-size: 0.95rem;
+    }
+
+    .coming-soon {
+      display: inline-block;
+      background-color: #ff8800;
+      color: white;
+      padding: 0.2rem 0.6rem;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        margin: 0 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="contact.html">Contact</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+
+  <h1>Blog</h1>
+
+  <div class="blog-container">
+    <div class="blog-card">
+      <h3>Breaking into Cloud Security: My Journey</h3>
+      <p>From advocacy to architecture — lessons, tools, and turning points that shaped my path.</p>
+      <span class="coming-soon">Coming Soon</span>
+    </div>
+
+    <div class="blog-card">
+      <h3>How to Build Your First Static Website on AWS</h3>
+      <p>Step-by-step guide to hosting your first site using S3, CloudFront, and Route 53.</p>
+      <span class="coming-soon">Coming Soon</span>
+    </div>
+
+    <div class="blog-card">
+      <h3>Top 5 AWS Services Every Beginner Should Know</h3>
+      <p>Want to start in AWS? These are the services I wish I learned earlier in my journey.</p>
+      <span class="coming-soon">Coming Soon</span>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Irimekyen Salome Samuel · xphoenix.dev
+  </footer>
+</body>
+</html>
