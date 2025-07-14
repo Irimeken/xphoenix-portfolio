@@ -1,51 +1,38 @@
-# xphoenix-portfolio
-My personal portfolio built with AWS S3, CloudFront, and Route 53.
-# 🌟 xPhoenix Portfolio Website
+# xPhoenix Portfolio 🌟
 
-Welcome to my personal portfolio — built to showcase my work, certifications, and passion for digital innovation and transformation.
+Welcome to my personal portfolio, built and deployed entirely using AWS cloud services and GitHub. This site showcases my technical projects, certifications, and professional journey into cloud computing and innovation.
 
-This project is a fully responsive, serverless-powered static website designed and developed by **Irimekyen Salome Samuel**.
+## 🔧 Features
 
----
+- **Responsive static website** built with HTML, CSS, and JavaScript
+- **Deployed on AWS S3**, with custom domain via Route 53 and HTTPS via CloudFront
+- **CI/CD enabled** with GitHub Actions for automated deployment
+- **Live Serverless Contact Form** using API Gateway, Lambda (Python), and Amazon SES
 
-## 🔗 Live Site
+## 🌍 Live Site
 
-> 🌐 Coming Soon – will be deployed on GitHub Pages or a custom domain.
+Visit: [https://www.xphoenix.dev](https://www.xphoenix.dev)
 
----
+## 💻 Technologies Used
 
-## 🧰 Tech Stack
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Cloud Services**:
+  - Amazon S3 (hosting)
+  - Amazon CloudFront (CDN & HTTPS)
+  - Amazon Route 53 (custom domain)
+  - AWS Lambda (Python backend for form)
+  - Amazon SES (email sending)
+  - API Gateway (RESTful API)
+- **Version Control & CI/CD**:
+  - Git & GitHub
+  - GitHub Actions (for continuous deployment)
 
-| Frontend | Backend (Contact Form) |
-|----------|-------------------------|
-| HTML5 + CSS3 | AWS Lambda (Python) |
-| Responsive Web Design | AWS API Gateway |
-| GitHub Pages (optional) | AWS SES (Simple Email Service) |
+## 📫 Contact
 
----
-
-## 📬 Contact Form (Serverless)
-
-The contact form is powered by a secure, serverless backend using:
-
-- **Amazon API Gateway** – to expose the form submission endpoint
-- **AWS Lambda** – to handle the request and send emails via...
-- **Amazon SES** – to deliver the message to my inbox
-
-> ✅ CORS-enabled  
-> ✅ Rate-limited via API Gateway settings  
-> ✅ Successfully tested on deployed version
+Want to work together or collaborate?  
+Send me a message directly from: [https://www.xphoenix.dev/contact.html](https://www.xphoenix.dev/contact.html)
 
 ---
 
-## 🗂️ Folder Structure
-
-```bash
-xphoenix-portfolio/
-├── index.html
-├── about.html
-├── certifications.html
-├── projects.html
-├── contact.html
-├── blog.html
-└── README.md
+Built with love and the cloud,  
+**Irimekyen Salome Samuel**
